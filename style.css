@@ -1,18 +1,21 @@
-@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap');
 :root{
     --primary-color:#8e3aed;
-    --oh-white:  rgb(176, 173, 173);
+    --oh-white:  #d1d5db;
 }
 body{
-    font-family: 'Muli', sans-serif;
+  font-family: 'EB Garamond', serif;
+
 }
 h1{
-    font-family: 'Quicksand', sans-serif;
+  font-family: 'Dosis', sans-serif;
 }
 h2{
-    font-family: 'Dosis', sans-serif;
-}
+  font-family: 'Dosis', sans-serif;
+}  
+
 .container
 {
     padding-left: 1rem;
@@ -92,16 +95,23 @@ h2{
     text-align: center;
   }
   /**section**/
-  .section h3
+  .section-ow
   {
     text-align: center;
     padding: 0.6rem;
     background-color:var(--oh-white);
+    padding-bottom:2rem;
+  }
+  .sec
+  {
+    text-align: center;
+    padding: 0.6rem;
+    padding-bottom:2rem;
   }
   .footer
   {
     background:var(--primary-color);
-    padding:2rem , 1rem;
+    padding:2rem , 2rem;
     border-top-right-radius: 1rem;
     color:aliceblue;
     
@@ -118,7 +128,17 @@ h2{
     padding-left: 0.3rem;
     padding-bottom: 0.6rem;
     text-align: center;
-    font-size: large
+    font-size: large;
+    
+  }
+  .heading-inverted
+  {
+    color:#8e3aed;
+    font-weight:bold;
+  }
+  .heading{
+    font-size: x-large;
+    font-weight: 400;
   }
   
 
