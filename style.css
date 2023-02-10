@@ -11,6 +11,7 @@ body{
 }
 h1{
   font-family: 'Dosis', sans-serif;
+  
 }
 h2{
   font-family: 'Dosis', sans-serif;
@@ -35,6 +36,8 @@ h2{
         background-color:var(--primary-color);
         border-radius: 0.5rem;
         color:blanchedalmond;
+        margin-right: 3rem;
+        
     }
         
   .link-primary{
@@ -139,6 +142,13 @@ h2{
   .heading{
     font-size: x-large;
     font-weight: 400;
+  }
+  .section-ow h2{
+    margin-bottom:1rem;
+    margin-top: 1rem;
+  }
+  .under{
+  text-decoration-line:underline;
   }
   
 
