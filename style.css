@@ -151,5 +151,13 @@ h2{
   .under{
   text-decoration-line:underline;
   }
- 
+ @media (max-width:700px){
+  .hero .hero-img
+  {
+    max-width: 350px;
+  }
+  .head{
+    margin-left: -10px;
+  }
+ }
 
