@@ -25,22 +25,71 @@
     <h1 class="hero-heading">See my blogs</h1>
     <section class="section-ow">
         <div class="center-container">
-            <h2 class="h2 under">How live your life</h2>
+            <h2 class="h2 under">About java package</h2>
             <small>january 2023</small>
-            <p>In recent time people only have pressure. No one can enjoy there life.I know its important to take pressure so we can achieve
-               something in our life .But only taking a pressure is not good .Everyone have a pressure to get good position in their study or to earn money for their family .
-               but no one think after sometime your regert that you never enjoy your life.Many people think if i get good position in study i am happy or getting good job then i am happy 
-               but you will be happy when you do what your heart says.</p>
-            <p>I never say always but sometime you forget everthing and do what your heart says.
-               Like travelling new places , eating different varities of food ,shopping whatever you want to do you will do.In that time you feel like the top of the world. 
-
+            <p>
+                you now about many java package but right now we are studying about new          java package that is java.time .
+                In jave.time package there are so many classes like LocalDate , LocalTime , LocalDateTime and DateTimeFormatter .
             </p>
-            <h2>I personally suggest that here are some place where you must be travel.</h2>
-            <a  class="link link-secondary" href="https://www.fabhotels.com/blog/amusement-parks-in-mumbai/">amusement parks</a >
-            <a  class="link link-primary" href="https://www.treebo.com/blog/trekking-places-in-india/">trekking places</a >    
-            <h2>Now , its time to food. Even hearing about food makes you hungry.</h2>
-            <a  class="link link-secondary" href="https://unsplash.com/s/photos/restaurant-food">Delicious food </a >
-           
+            <h2>Displaying Current Date</h2>
+            <p> 
+                To display the current date we import java.time.LocalDate class , and use now    () method :
+                <u>Example:-</u><br>
+                    import java.time.LocalDate<br>
+                    class CurrentDate
+                    {<br>
+                       public static void main(String arg[])
+                        {<br>
+                           LocalDate myObj = LocalDate.now();<br>
+                            System.out.println(myObj);<br>
+                        }<br>
+                    }
+            </p>
+            <h2>Displaying Current Time</h2>
+            <p> 
+                To display the current time (hour, minute, second, and nanoseconds) we import java.time.LocalTime class , and use now   () method : <br>
+                <u>Example:-</u><br>
+                    import java.time.LocalTime<br>
+                    class CurrentDate
+                    {<br>
+                       public static void main(String arg[])
+                        {<br>
+                           LocalTime myObj = LocalTime.now();<br>
+                            System.out.println(myObj);<br>
+                        }<br>
+                    }
+            </p>
+            <h2>Displaying Current Date and Time</h2>
+            <p> 
+                To display the current date and time both we import java.time.LocalDateTime class , and use it now() method :<br>
+                <u>Example:-</u><br>
+                    import java.time.LocalDateTime<br>
+                    class CurrentDateTime
+                    {<br>
+                       public static void main(String arg[])
+                        {<br>
+                           LocalDateTime myObj = LocalDateTime.now();<br>
+                            System.out.println(myObj);<br>
+                        }<br>
+                    }
+            </p>
+            <h2>Formatting Date and Time</h2>
+            <p> 
+                For formatting Date and Time we import java.time.format.DateTimeFormatter class , and use it ofPattern() method :<br>
+                <u>Example:-</u><br>
+                import java.time.LocalDateTime;<br> 
+                import java.time.format.DateTimeFormatter;<br>
+                public class Main { <br>
+                    public static void main(String[] args) {<br>
+                     LocalDateTime myDateObj = LocalDateTime.now(); <br>
+                      System.out.println("Before formatting: " + myDateObj);<br>
+                      DateTimeFormatter myFormatObj = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");<br>
+                  
+                      String formattedDate = myDateObj.format(myFormatObj);<br>
+                      System.out.println("After formatting: " + formattedDate);<br>
+                    }<br>
+                  }
+            </p>
         </div>
     </section>
 </body>
